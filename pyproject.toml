@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "poetry-redshift-notebook"
+version = "0.1.0"
+description = ""
+authors = ["Jay Saini <jay.saini@air-up.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8, <4.0"
+pandas = [
+    { version = ">=1.2.0,<2.1.4", markers = "python_version < \"3.9\"" },
+    { version = ">=1.2.0,<2.1.4", markers = "python_version >= \"3.9\"" },
+]
+numpy = [
+    {version = "^1.18", markers = "python_version < \"3.12\""},
+    {version = "^1.26", markers = "python_version >= \"3.12\""}
+]
+sqlalchemy = "1.4.52"
+psycopg2-binary = "2.9.5"
+jupyter = "^1.0.0"
+ipykernel = "^6.29.5"
+python-dotenv = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
