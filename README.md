@@ -25,6 +25,20 @@
    ```sh
    poetry run jupyter notebook
    ```
-   
+
+To Manage Environment Variables:
+1. **Create .env file**:
+   ```sh
+   touch .env
+   ```
+
+2. **Add Environment Variables in .env file**:
+   ```
+   REDSHIFT_USER=XXXXXXXXXXX
+   REDSHIFT_PASSWORD=XXXXXXXXXXX
+   REDSHIFT_HOST=XXXXXXXXXXX
+   REDSHIFT_PORT=XXXXXXXXXXX
+   REDSHIFT_DB=XXXXXXXXXXX
+   ```
 
 Poetry Docs: https://python-poetry.org/docs/basic-usage/
