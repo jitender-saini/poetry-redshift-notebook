@@ -1,6 +1,17 @@
 ## Steps to build the project
 
 
+# Steps to build and run project with docker
+
+1. **Run Docker Cmpose**:
+   ```sh
+    docker-compose up
+   ```
+
+
+
+# Steps to build project without Docker
+
 1. **Install Poetry**:
    ```sh
    pip install poetry
@@ -11,9 +22,9 @@
    poetry shell
    ```
    
-3. **Install dependencies**:
+3. **Install new dependencies**:
    ```sh
-    poetry install
+    poetry install jsonpickle
     ```
    
 4. **Adding new dependencies**:
