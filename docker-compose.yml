@@ -2,18 +2,16 @@ version: '3.8'
 
 services:
   jupyterlab:
-    image: python:3.9
+    build: .
     container_name: jupyterlab
     ports:
       - "8888:8888"
     volumes:
-      - .:/workspace
-    working_dir: /workspace
+      - ./notebooks:/workspace/notebooks
     env_file: .env
     environment:
       - POETRY_HOME=/poetry
       - POETRY_VIRTUALENVS_CREATE=false
-    entrypoint: ["./docker-entrypoint.sh"]
 
 volumes:
   jupyterlab_data:
